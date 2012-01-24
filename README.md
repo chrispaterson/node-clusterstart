@@ -15,9 +15,12 @@ If no number is passed, then it runs on all available cores.  Likewise if the nu
 
 ## Example
     var clusterize = require('clusterize'),
-		    http = require('http');
+			http = require('http');
 
-				http.Server(function(req, res) {
-					res.writeHead(200);
-					res.end("hello world\n");
-				}).listen(8000);
+			http.Server(function(req, res) {
+				res.writeHead(200);
+				res.end("hello world\n");
+			}).listen(8000);
+
+And to run:
+    $ node app.js --clusterize
