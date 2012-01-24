@@ -1,12 +1,12 @@
 {
   "author": "Chris 'One Tee' Paterson <chrispaterson82@gmail.com> (http://www.chrispaterson.net)",
-  "name": "clusterize",
+  "name": "clusterstart",
   "description": "Enable clusterization of an app via a launching commandline argument (--clusterize [number of cores]).",
   "version": "0.0.0",
-  "homepage": "https://github.com/chrispaterson/node-clusterize",
+  "homepage": "https://github.com/chrispaterson/node-clusterstart",
   "repository": {
     "type": "git",
-    "url": "git://github.com/chrispaterson/node-clusterize.git"
+    "url": "git://github.com/chrispaterson/node-clusterstart.git"
   },
   "engines": {
     "node": "~0.6.6"

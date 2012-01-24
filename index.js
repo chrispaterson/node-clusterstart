@@ -1,5 +1,5 @@
 /*!
- * Ext JS Connect
+ * Clusterit Node.js module
  * Copyright(c) 2012 ValueClick Inc.
  * MIT Licensed
  */
@@ -8,7 +8,6 @@ var argv = require('optimist').argv,
     cluster = require('cluster');
 
 if(cluster.isMaster && argv.clusterize) {
-  console.log("I am the master and we've been told to clusterize");
   var numberOfForks;
   var numCPUs = require('os').cpus().length;
   var requestedWorkers = parseInt(argv.clusterize);

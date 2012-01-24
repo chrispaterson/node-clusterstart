@@ -1,11 +1,11 @@
-# Clusterize
+# Clusterstart
 The purpose of this module is to enable an app created in Node.js to run either in cluster or on a signle core.
 
 ## Installation
-		$ npm install node-clusterize
+		$ npm install clusterstart
 
 ## Commands
-clusterize allows you to import the clusterize module into your app, then just run it as a cluster.
+clusterstart allows you to import the clusterstart module into your app, then just run it as a cluster.
     $ node app.js --clusterize
 
 It also allows you to specify the number of cores to run it on.
@@ -14,7 +14,7 @@ It also allows you to specify the number of cores to run it on.
 If no number is passed, then it runs on all available cores.  Likewise if the number passed in is more than the available cores, it will default to the available cores.
 
 ## Example
-    var clusterize = require('clusterize'),
+    var clusterstart = require('clusterstart'),
 			http = require('http');
 
 			http.Server(function(req, res) {
@@ -23,4 +23,5 @@ If no number is passed, then it runs on all available cores.  Likewise if the nu
 			}).listen(8000);
 
 And to run:
+
     $ node app.js --clusterize
