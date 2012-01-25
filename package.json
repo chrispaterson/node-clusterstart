@@ -2,17 +2,22 @@
   "author": "Chris 'One Tee' Paterson <chrispaterson82@gmail.com> (http://www.chrispaterson.net)",
   "name": "clusterstart",
   "description": "Enable clusterization of an app via a launching commandline argument (--clusterize [number of cores]).",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/chrispaterson/node-clusterstart",
   "repository": {
     "type": "git",
     "url": "git://github.com/chrispaterson/node-clusterstart.git"
   },
+  "scripts": {
+    "test": "node_modules/tap/bin/tap.js test/tests/"
+  },
   "engines": {
     "node": "~0.6.6"
   },
   "dependencies": {
-		"optimist":"0.3.1"
-	},
-  "devDependencies": {}
+    "optimist": "0.3.1"
+  },
+  "devDependencies": {
+		"tap":"0.2.0"
+	}
 }

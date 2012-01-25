@@ -25,3 +25,9 @@ If no number is passed, then it runs on all available cores.  Likewise if the nu
 And to run:
 
     $ node app.js --clusterize
+
+Testing:
+
+There is simple test in the ./tests directory which spins up a server and trys different clusterizing options through child_process
+
+    $ npm test
