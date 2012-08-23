@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/chrispaterson/node-clusterstart.png)](http://travis-ci.org/chrispaterson/node-clusterstart)
 # Clusterstart
 The purpose of this module is to enable an app created in Node.js to run either in cluster or on a signle core.
 
